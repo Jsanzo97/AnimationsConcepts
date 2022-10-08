@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:duration="@android:integer/config_shortAnimTime"
+        android:drawable="@drawable/barbarian_1" />
+
+    <item
+        android:duration="@android:integer/config_shortAnimTime"
+        android:drawable="@drawable/barbarian_2" />
+
+    <item
+        android:duration="@android:integer/config_shortAnimTime"
+        android:drawable="@drawable/barbarian_3" />
+
+    <item
+        android:duration="@android:integer/config_shortAnimTime"
+        android:drawable="@drawable/barbarian_4" />
+
+    <item
+        android:duration="@android:integer/config_shortAnimTime"
+        android:drawable="@drawable/barbarian_5" />
+
+</animation-list>

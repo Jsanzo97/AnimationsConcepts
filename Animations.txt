@@ -1,0 +1,11 @@
+1. - CONCEPTS:
+    - Interpolator: Determines the rate of change for an animation f.e: BounceInterpolator,
+        AnticipateInterpolator
+    - AnimationSet: Group of animations
+
+2. - TYPES:
+    - Translate: Move view from one point to other
+    - Alpha: Change alpha to change view visibility, fade in or fade out
+    - Scale: Change the size of view
+    - Rotate: Rotate view
+

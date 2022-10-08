@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AnimationsGroup"
+        tools:targetApi="31">
+        <activity
+            android:name=".module2.GroupAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar">
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".module2.ConstraintSetAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module2.PlaceHolderAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module3.ClassicAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module3.ResourceAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module3.ActivityOneAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module3.ActivityTwoAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".module3.CombinedOneAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module3.CombinedTwoAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".module3.BackgroundAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module3.BackgroundSelectorAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module4.ObjectAnimatorAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module4.ViewAnimatorAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module4.ResourcesAnimatorAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module5.SimpleTransitionsAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module5.TransitionsResourcesAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module6.SlideExplodeAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module6.CoordinatedSlideAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module6.TransformAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module6.SharedElementsAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module6.SharedElementsSecondAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup" >
+
+        </activity>
+
+        <activity
+            android:name=".module6.WindowContentTransitionsAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Window.Animations" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module6.WindowContentSecondTransitionsAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Window.Animations" >
+
+        </activity>
+
+        <activity
+            android:name=".module6.FragmentTransitionsAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Window.Animations" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+
+        <activity
+            android:name=".module7.AnimatedVectorActivity"
+            android:exported="true"
+            android:theme="@style/Window.Animations" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module8.FlingAnimationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <activity
+            android:name=".module8.GravityAnimationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module8.SpringAnimationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module9.ProgressLottieAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module9.QuestionGameAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module9.CarouselAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".module10.MotionLayoutAnimationsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnimationsGroup.NoActionBar" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

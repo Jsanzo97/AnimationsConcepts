@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        android:id="@+id/transition_down"
+        motion:duration="3000"
+        motion:constraintSetStart="@id/start"
+        motion:constraintSetEnd="@id/end">
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                motion:motionTarget="@id/animated_image"
+                motion:framePosition="20"
+                motion:percentX="0.8"
+                motion:percentY="0.1"
+                motion:keyPositionType="parentRelative" />
+
+            <KeyPosition
+                motion:motionTarget="@id/animated_image"
+                motion:framePosition="80"
+                motion:percentX="0.1"
+                motion:percentY="0.8"
+                motion:keyPositionType="parentRelative" />
+
+            <KeyAttribute
+                motion:motionTarget="@id/animated_image"
+                motion:framePosition="30"
+                android:rotation="360"
+                motion:keyPositionType="parentRelative" />
+
+            <KeyAttribute
+                motion:motionTarget="@id/animated_image"
+                motion:framePosition="60"
+                android:rotation="0"
+                motion:keyPositionType="parentRelative" />
+
+        </KeyFrameSet>
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/animated_image" />
+
+        <!--
+        <OnClick
+            motion:targetId="@id/animated_image"
+            motion:clickAction="transitionToEnd" />
+            -->
+
+    </Transition>
+
+    <Transition
+        android:id="@+id/transition_new_scene"
+        motion:duration="3000"
+        motion:constraintSetStart="@id/end"
+        motion:constraintSetEnd="@id/new_scene">
+
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/animated_image" />
+
+    </Transition>
+
+    <Transition
+        android:id="@+id/transition_up"
+        motion:duration="3000"
+        motion:constraintSetStart="@id/new_scene"
+        motion:constraintSetEnd="@id/start">
+
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/animated_image" />
+
+    </Transition>
+
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@id/animated_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:pathMotionArc="startVertical">
+
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0"/>
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@id/animated_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:rotation="360"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:pathMotionArc="startVertical">
+
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1"/>
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/new_scene">
+
+        <Constraint
+            android:id="@id/animated_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+
+        </Constraint>
+
+    </ConstraintSet>
+
+</MotionScene>
